@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title></title>
+  </head>
+  <body>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        .header {
+          display: flex;
+          justify-content:space-around
+
+        }
+
+        .container {
+          display:grid;
+          justify-content: space-evenly;
+          grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 530px) {
+          .container {
+            display: grid;
+            grid-template-columns: 1fr
+          }
+        }
+        @media (max-width: 420px) {
+          .container {
+            display: grid;
+            grid-template-columns: 1fr
+          }
+        }
+        h2 {
+          color:rgb(11, 11, 63);
+
+        }
+        .get {
+          background-color: rgb(11, 11, 63);
+          color: white;
+          border-radius: 15px;
+          padding: 5px 10px 5px 10px;
+          margin-top: 15px;
+          width:100px;
+          height: 32px;
+          transition: 0.15s;
+          
+        }
+        .get:hover {
+          opacity: 0.90;
+        }
+        .get:active {
+          opacity: 0.80;
+        }
+        .contain {
+          margin-left: 70px;
+          justify-content:center;
+          align-items: center;
+        }
+        .description {
+          font-size: 15px;
+          width: 300px;
+          color: rgb(170, 166, 166)
+        }
+        h1 {
+          font-family: arial;
+          font-weight: 750;
+          width: 300px;
+          color: rgb(49, 14, 49)
+        }
+        .get2 {
+          background-color: rgb(190, 23, 17);
+          color: white;
+          border: none;
+          border-radius: 15px;
+          padding: 8px 15px 8px 15px;
+          margin-top: 15px;
+          transition: opacity 0.15s;
+        }
+        .get2:hover {
+          opacity: 0.90;
+        }
+        .get2:active {
+          opacity: 0.80
+        }
+        img {
+          width: 150px;
+          height: 270px;
+          border-radius: 200px;
+        }
+        .img1 {
+          position: relative;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+        }
+        span {
+          color: rgb(49, 14, 49);
+          font-family: sans-serif;
+          font-weight: 700;
+        }
+        .p {
+          margin: 0;
+          font-size: 10px;
+          color: rgb(170, 166, 166);
+          padding-bottom: 3px;
+          font-family: arial;
+          font-size: 9px;
+        }
+        .flooter {
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          position:absolute;
+          top: 0;
+          right: 0;
+          border-radius: 10px;
+          width: 75px;
+          height: 40px;
+          z-index: 100;
+          padding-top: 10px;
+          padding-left: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .flooter1 {
+          display: flex;
+          background-color: white;
+          flex-direction: column;
+          position: absolute;
+          border-radius: 10px;
+          width: 80px;
+          height: 40px;
+          z-index: 100;
+          top: 150px;
+          padding-top: 10px;
+          padding-left: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 10px;
+          padding-top: 20px;
+          margin-left: 70px;
+          margin-right: 70px;
+        }
+        @media (max-width: 400px) {
+          .grid {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        @media (max-width: 560px) {
+          .grid {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+        .post {
+          background-color:rgb(190, 23, 17);
+          height: 150px;
+          border-radius: 10px;
+        }
+        .item {
+          height: 150px;
+          background-color: blueviolet;
+          color: white;
+          border-radius: 10px;
+        }
+        .bottom {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          background-color:rgb(11, 11, 63);
+          height: 45px;
+          margin-top: 10px;
+        }
+        .h2 {
+          color: white
+        }
+        .get3 {
+          background-color: rgb(190, 23, 17);
+          height: 30px;
+          border-radius: 20px;
+          border: none;
+          color: white;
+          font-size: 11px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .get3:hover {
+          opacity: 0.90;
+        }
+        .get3:active {
+          opacity: 0.80
+        }
+        .starter {
+          color: white;
+          padding-left: 20px;
+          padding-right: 10px;
+          padding-top: 10px;
+          font-family: arial;
+          font-weight: 500;
+        }
+      </style>
+      <div class="header">
+        <h2>skilled</h2>
+        <button class="get">Get Started</button>
+      </div>
+
+    <div class="container">
+      <div class="contain">
+        <h1>Maximize skill, minimize budget</h1>
+        <p class="description">Our modern courses across arange of in-demand
+          skills will give you the knowledge
+           you need to live the life you want
+        </p>
+        <button class="get2">Get started</button>
+      </div>
+      <div class="img1">
+        <img src="photo/download.jfif">
+        <div class="flooter1">
+          <p class="p">Course hours</p>
+          <span>1,451</span>
+        </div>
+
+        <div class="flooter">
+          <p class="p">Members</p>
+          <span>29k</span>
+        </div>
+      </div>
+    </div>
+
+      <div class="grid">
+        <div class="post">
+          <p class="starter">Check out our most popular courses!</p>
+        </div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+      </div>
+
+      <div class="bottom">
+        <h2 class="h2">skilled</h2>
+        <button class="get3">Get Started</button>
+      </div>
+
+    
+      
+
+  </body>
+</html>
